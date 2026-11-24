@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#141414" />
+        <title>Netflix — Browse</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a class="skip-link" href="#browse">Skip to titles</a>
+        <header class="header">
+            <a class="brand" href="#" aria-label="Netflix home"
+                ><img src="assets/NetflixLogoSvg.png" alt="Netflix"
+            /></a>
+            <nav aria-label="Main navigation">
+                <a href="#" aria-current="page">Start</a><a href="#trending">Shows</a
+                ><a href="#top-ten">Movies</a><a href="#trending">New</a
+                ><button class="nav-list" type="button">My List</button>
+            </nav>
+            <div class="tools">
+                <button
+                    class="icon-button"
+                    type="button"
+                    data-utility="Search"
+                    aria-label="Search titles"
+                >
+                    <img src="assets/Search.png" alt="" />
+                </button>
+                <button
+                    class="icon-button secondary-tool"
+                    type="button"
+                    data-utility="Gift cards"
+                    aria-label="Gift cards"
+                >
+                    <img src="assets/GiftBox.png" alt="" />
+                </button>
+                <button
+                    class="icon-button secondary-tool"
+                    type="button"
+                    data-utility="Notifications"
+                    aria-label="Notifications"
+                >
+                    <img src="assets/NotificationBell.png" alt="" />
+                </button>
+                <button
+                    class="profile icon-button"
+                    type="button"
+                    data-utility="Profile"
+                    aria-label="Your profile"
+                >
+                    <img src="assets/ProfileIMG.png" alt="" /><span aria-hidden="true">▾</span>
+                </button>
+            </div>
+        </header>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <div class="show-mark">
+                    <img src="assets/Netflix_Symbol_RGB%201.png" alt="Netflix" /> <span>SHOW</span>
+                </div>
+                <h1 id="hero-title">MAID</h1>
+                <div class="hero-actions">
+                    <button class="play" type="button" data-play>
+                        <img src="assets/Play.png" alt="" />Play</button
+                    ><button class="more" type="button" data-title="MAID">
+                        <img src="assets/Detail.png" alt="" />More info
+                    </button>
+                </div>
+            </div>
+            <button
+                class="add-list"
+                type="button"
+                aria-label="Add MAID to My List"
+                aria-pressed="false"
+            >
+                <img src="assets/Add.png" alt="" />
+            </button>
+        </section>
+        <main id="browse" class="catalog">
+            <section class="shelf" id="see-again" aria-labelledby="again-heading">
+                <h2 id="again-heading">See again <span aria-hidden="true">›</span></h2>
+                <div class="rail" tabindex="0" aria-label="See again titles">
+                    <div class="card">
+                        <img class="" src="assets/section%201.1.png" alt="You" loading="lazy" />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%201.2.png"
+                            alt="Snowpiercer"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%201.3.png"
+                            alt="The Universe"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%201.4.png"
+                            alt="The Last Kingdom"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%201.5.png"
+                            alt="Money Heist"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="shelf ranked" id="top-ten" aria-labelledby="top-heading">
+                <h2 id="top-heading">Top 10 in your country <span aria-hidden="true">›</span></h2>
+                <div class="rail" tabindex="0" aria-label="Top 10 titles">
+                    <div class="card">
+                        <img class="rank" src="assets/Rank%20-%2001.png" alt="Number 1" /><img
+                            class="poster"
+                            src="assets/section%202.1.png"
+                            alt="Red Notice"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img class="rank" src="assets/Rank%20-%2002.png" alt="Number 2" /><img
+                            class="poster"
+                            src="assets/section%202.2.png"
+                            alt="Jason Bourne"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img class="rank" src="assets/Rank%20-%2003.png" alt="Number 3" /><img
+                            class="poster"
+                            src="assets/section%202.3.png"
+                            alt="Squid Game"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img class="rank" src="assets/Rank%20-%2004.png" alt="Number 4" /><img
+                            class="poster"
+                            src="assets/section%202.4.png"
+                            alt="Central Intelligence"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img class="rank" src="assets/Rank%20-%2005.png" alt="Number 5" /><img
+                            class="poster"
+                            src="assets/section%202.5.png"
+                            alt="Hellbound"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="shelf" id="trending" aria-labelledby="trending-heading">
+                <h2 id="trending-heading">Trending now <span aria-hidden="true">›</span></h2>
+                <div class="rail" tabindex="0" aria-label="Trending titles">
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%203.1.png"
+                            alt="Explained"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%203.2.png"
+                            alt="Into the Night"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%203.3.png"
+                            alt="Locke &amp; Key"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%203.4.png"
+                            alt="The Queen’s Gambit"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%203.5.png"
+                            alt="The Crown"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="shelf" id="sci-fi" aria-labelledby="scifi-heading">
+                <h2 id="scifi-heading">Sci-fi shows <span aria-hidden="true">›</span></h2>
+                <div class="rail" tabindex="0" aria-label="Science fiction titles">
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%204.1.png"
+                            alt="Altered Carbon"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%204.2.png"
+                            alt="Another Life"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%204.3.png"
+                            alt="The Umbrella Academy"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div class="card">
+                        <img class="" src="assets/section%204.4.png" alt="Sense8" loading="lazy" />
+                    </div>
+                    <div class="card">
+                        <img
+                            class=""
+                            src="assets/section%204.5.png"
+                            alt="The Rain"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="socials" aria-label="Social media">
+                <a href="https://www.facebook.com/netflix" aria-label="Netflix on Facebook"
+                    ><img src="assets/facebook.png" alt="" /></a
+                ><a href="https://www.instagram.com/netflix" aria-label="Netflix on Instagram"
+                    ><img src="assets/instagram.png" alt="" /></a
+                ><a href="https://twitter.com/netflix" aria-label="Netflix on Twitter"
+                    ><img src="assets/twitter.png" alt="" /></a
+                ><a href="https://www.youtube.com/netflix" aria-label="Netflix on YouTube"
+                    ><img src="assets/youtube.png" alt=""
+                /></a>
+            </div>
+            <div class="footer-links" lang="tr">
+                <div>
+                    <a href="#" data-footer>Seslendirme ve Alt Yazı</a
+                    ><a href="#" data-footer>Medya Merkezi</a><a href="#" data-footer>Gizlilik</a
+                    ><a href="#" data-footer>Bize Ulaşın</a>
+                </div>
+                <div>
+                    <a href="#" data-footer>Sesli Betimleme</a
+                    ><a href="#" data-footer>Yatırımcı İlişkileri</a
+                    ><a href="#" data-footer>Yasal Hükümler</a>
+                </div>
+                <div>
+                    <a href="#" data-footer>Yardım Merkezi</a
+                    ><a href="#" data-footer>İş İmkanları</a
+                    ><a href="#" data-footer>Çerez Tercihleri</a>
+                </div>
+                <div>
+                    <a href="#" data-footer>Hediye Kartları</a
+                    ><a href="#" data-footer>Kullanım Koşulları</a
+                    ><a href="#" data-footer>Kurumsal Bilgiler</a>
+                </div>
+            </div>
+            <button class="service" type="button" data-utility="Service code">Hizmet Kodu</button>
+            <p class="copyright">© 1997-2021 Netflix, Inc. {i-062d573a0ee099242}</p>
+        </footer>
+        <dialog id="details" aria-labelledby="dialog-title">
+            <button class="close" type="button" aria-label="Close dialog">×</button>
+            <h2 id="dialog-title"></h2>
+            <div id="dialog-content"></div>
+            <button class="dialog-done" type="button">Close</button>
+        </dialog>
+        <p class="status" role="status" aria-live="polite"></p>
+    </body>
+</html>

@@ -1,0 +1,184 @@
+/* HTML and CSS techniques from CodingGita CGXSwarrnim, Semester-1/HTML_CSS_JS. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.product-row > * {
+  min-width: 0;
+}
+
+body {
+  color: #111;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.cart img {
+  width: 30px;
+}
+
+.banner {
+  background: #ff456b url('assets/kw-background.png') center center/cover no-repeat;
+  padding: 4% 5%;
+  color: white;
+}
+
+h1 {
+  font: bold 4.5vw/1.25 Georgia, serif;
+}
+
+.banner p {
+  margin-top: 18px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.products {
+  width: 90%;
+  margin: 140px auto;
+}
+
+h2 {
+  font: bold 23px Georgia, serif;
+  margin-bottom: 12px;
+}
+
+.product-row {
+  display: grid;
+  gap: 4%;
+}
+
+.books {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.games, .crafts {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6%;
+}
+
+.product-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+.product p {
+  color: #777;
+  font-size: 14px;
+  margin: 10px 0 14px;
+}
+
+.buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #5d94ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 7px;
+  font: bold 15px Arial, sans-serif;
+}
+
+.buy button img {
+  width: 18px;
+  height: 18px;
+}
+
+button:hover {
+  background-color: #3269d0;
+}
+
+a:focus, button:focus {
+  outline: 2px solid #233b7d;
+}
+
+@media screen and (max-width: 900px) {
+  .books {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px 6%;
+  }
+  .games, .crafts {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 6%;
+  }
+  .products {
+    margin: 70px auto;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 12px 5%;
+  }
+  .logo {
+    width: 115px;
+  }
+  .cart {
+    font-size: 11px;
+  }
+  .cart img {
+    width: 25px;
+  }
+  .banner {
+    padding: 32px 5%;
+    background-position: 60% center;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .banner p {
+    font-size: 13px;
+  }
+  .books {
+    grid-template-columns: 1fr 1fr;
+  }
+  h2 {
+    font-size: 21px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .product p {
+    font-size: 12px;
+  }
+  .buy button {
+    font-size: 13px;
+  }
+}

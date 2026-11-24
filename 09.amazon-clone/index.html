@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Amazon India homepage recreation for the CodingGita HTML and CSS assignment."
+        />
+        <title>Amazon.in — Online shopping</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body id="top">
+        <div class="page">
+            <header class="header">
+                <a class="brand" href="index.html" aria-label="Amazon India home"
+                    ><!-- Supplied asset: logo.png --><img
+                        class=""
+                        src="assets/logo.png"
+                        alt="amazon.in"
+                /></a>
+                <a class="location" href="https://www.amazon.in/a/addresses"
+                    ><!-- Supplied asset: location.png --><img
+                        class=""
+                        src="assets/location.png"
+                        alt=""
+                    /><span>Hello<strong>Select your address</strong></span></a
+                >
+                <form class="search" action="https://www.amazon.in/s" method="get" role="search">
+                    <label class="sr-only" for="category">Category</label
+                    ><select id="category" name="i">
+                        <option value="aps">All</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="kitchen">Home &amp; Kitchen</option>
+                    </select>
+                    <label class="sr-only" for="search">Search Amazon.in</label
+                    ><input id="search" name="k" type="search" required />
+                    <button type="submit" aria-label="Search">
+                        <!-- Supplied asset: search icon.png --><img
+                            class=""
+                            src="assets/search%20icon.png"
+                            alt=""
+                        />
+                    </button>
+                </form>
+                <a
+                    class="language"
+                    href="https://www.amazon.in/customer-preferences/edit"
+                    aria-label="Language settings: India"
+                    ><!-- Supplied asset: indian flag.png --><img
+                        class=""
+                        src="assets/indian%20flag.png"
+                        alt="India" /><span class="caret"></span
+                ></a>
+                <a class="account" href="https://www.amazon.in/ap/signin"
+                    ><span>Hello, Sign in</span
+                    ><strong>Account &amp; Lists<span class="caret"></span></strong
+                ></a>
+                <a class="orders" href="https://www.amazon.in/gp/your-account/order-history"
+                    ><span>Returns</span><strong>&amp; Orders</strong></a
+                >
+                <a class="cart" href="https://www.amazon.in/gp/cart/view.html"
+                    ><!-- Supplied asset: cart icon.png --><img
+                        class=""
+                        src="assets/cart%20icon.png"
+                        alt=""
+                    /><span class="cart-count">0</span><strong>Cart</strong></a
+                >
+            </header>
+            <nav class="nav" aria-label="Departments">
+                <a href="#products" class="all"
+                    ><!-- Supplied asset: ham burger icon.png --><img
+                        class=""
+                        src="assets/ham%20burger%20icon.png"
+                        alt=""
+                    />
+                    All</a
+                >
+                <a class="" href="https://www.amazon.in/s?k=Best+Sellers">Best Sellers</a
+                ><a class="" href="https://www.amazon.in/s?k=Mobiles">Mobiles</a
+                ><a class="" href="https://www.amazon.in/s?k=Customer+Service">Customer Service</a
+                ><a class="" href="https://www.amazon.in/s?k=Today’s+Deals">Today’s Deals</a
+                ><a class="" href="https://www.amazon.in/s?k=Fashion">Fashion</a
+                ><a class="" href="https://www.amazon.in/s?k=Electronics">Electronics</a
+                ><a class="" href="https://www.amazon.in/s?k=Books">Books</a
+                ><a class="" href="https://www.amazon.in/s?k=Prime"
+                    >Prime<span class="caret"></span></a
+                ><a class="" href="https://www.amazon.in/s?k=New+Releases">New Releases</a
+                ><a class="" href="https://www.amazon.in/s?k=Home+&+Kitchen">Home &amp; Kitchen</a
+                ><a class="" href="https://www.amazon.in/s?k=Amazon+Pay">Amazon Pay</a>
+                <a class="prime-day" href="https://www.amazon.in/primeday"
+                    ><!-- Supplied asset: lion.png --><img
+                        class=""
+                        src="assets/lion.png"
+                        alt=""
+                    /><span
+                        ><strong>prime day</strong
+                        ><small>23<sup>rd</sup>-24<sup>th</sup> July</small></span
+                    ></a
+                >
+            </nav>
+            <main>
+                <div class="storefront">
+                    <a
+                        class="hero"
+                        href="https://www.amazon.in/s?k=electronics+under+1999"
+                        aria-label="Under ₹1,999: top rated electronics and accessories. Extra up to 10% off via coupons. Pay on delivery and easy returns."
+                    ></a>
+                    <section id="products" class="products" aria-label="Shop by category">
+                        <article class="category">
+                            <h1>Upgrade your home | Amazon Brands &amp; more</h1>
+                            <div class="category-grid">
+                                <a
+                                    class="category-item"
+                                    href="https://www.amazon.in/s?k=Smart+LED+TVs"
+                                    ><!-- Supplied asset: image 17.png --><img
+                                        class=""
+                                        src="assets/image%2017.png"
+                                        alt="Smart LED TVs"
+                                    /><span>Smart LED TVs</span></a
+                                ><a
+                                    class="category-item"
+                                    href="https://www.amazon.in/s?k=Appliances"
+                                    ><!-- Supplied asset: image 18.png --><img
+                                        class=""
+                                        src="assets/image%2018.png"
+                                        alt="Appliances"
+                                    /><span>Appliances</span></a
+                                ><a class="category-item" href="https://www.amazon.in/s?k=Furniture"
+                                    ><!-- Supplied asset: image 20.png --><img
+                                        class=""
+                                        src="assets/image%2020.png"
+                                        alt="Furniture"
+                                    /><span>Furniture</span></a
+                                ><a
+                                    class="category-item"
+                                    href="https://www.amazon.in/s?k=Kitchen+products"
+                                    ><!-- Supplied asset: image 19.png --><img
+                                        class=""
+                                        src="assets/image%2019.png"
+                                        alt="Kitchen products"
+                                    /><span>Kitchen products</span></a
+                                >
+                            </div>
+                            <a class="more" href="https://www.amazon.in/s?k=Amazon+Brands"
+                                >Shop now</a
+                            >
+                        </article>
+                        <article class="category decor">
+                            <h2>Revamp your home in style</h2>
+                            <div class="category-grid">
+                                <a
+                                    class="category-item"
+                                    href="https://www.amazon.in/s?k=Bedsheets,+curtains+&amp;+more"
+                                    ><!-- Supplied asset: image 25.png --><img
+                                        class=""
+                                        src="assets/image%2025.png"
+                                        alt="Bedsheets, curtains &amp; more"
+                                    /><span>Bedsheets, curtains &amp; more</span></a
+                                ><a
+                                    class="category-item"
+                                    href="https://www.amazon.in/s?k=Home+decoration"
+                                    ><!-- Supplied asset: image 24.png --><img
+                                        class=""
+                                        src="assets/image%2024.png"
+                                        alt="Home decoration"
+                                    /><span>Home decoration</span></a
+                                ><a
+                                    class="category-item"
+                                    href="https://www.amazon.in/s?k=Home+storage"
+                                    ><!-- Supplied asset: image 22.png --><img
+                                        class=""
+                                        src="assets/image%2022.png"
+                                        alt="Home storage"
+                                    /><span>Home storage</span></a
+                                ><a
+                                    class="category-item"
+                                    href="https://www.amazon.in/s?k=Lighting+solutions"
+                                    ><!-- Supplied asset: image 21.png --><img
+                                        class=""
+                                        src="assets/image%2021.png"
+                                        alt="Lighting solutions"
+                                    /><span>Lighting solutions</span></a
+                                >
+                            </div>
+                            <a class="more" href="https://www.amazon.in/s?k=home+decor"
+                                >Explore all</a
+                            >
+                        </article>
+                        <article class="category clearance">
+                            <h2>Up to 70% off | Clearance store</h2>
+                            <a
+                                class="clearance-image"
+                                href="https://www.amazon.in/s?k=clearance+store"
+                                ><!-- Supplied asset: image 26.png --><img
+                                    class=""
+                                    src="assets/image%2026.png"
+                                    alt="Laptops, cameras, earbuds, watches and accessories" /></a
+                            ><a class="more" href="https://www.amazon.in/s?k=clearance+store"
+                                >See more</a
+                            >
+                        </article>
+                        <aside class="side-column">
+                            <section class="signin">
+                                <h2>Sign in for your best experience</h2>
+                                <a href="https://www.amazon.in/ap/signin">Sign in securely</a>
+                            </section>
+                            <a class="laptop-ad" href="https://www.amazon.in/s?k=laptops"
+                                ><!-- Supplied asset: image 28.png --><img
+                                    class=""
+                                    src="assets/image%2028.png"
+                                    alt="Laptops from top brands"
+                            /></a>
+                        </aside>
+                    </section>
+                </div>
+                <section class="rail rail-1-66" aria-label="Smart speakers and displays">
+                    <h2>Smart speakers and displays</h2>
+                    <div
+                        class="rail-track"
+                        tabindex="0"
+                        aria-label="Scroll smart speakers and displays"
+                    >
+                        <a class="product" href="https://www.amazon.in/s?k=61oYKFKUQoL+product"
+                            ><img
+                                src="assets/layer-1-91.png"
+                                alt="61oYKFKUQoL product"
+                                class=""
+                                width="201"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71MXrXqcyEL+product"
+                            ><img
+                                src="assets/layer-1-92.png"
+                                alt="71MXrXqcyEL product"
+                                class=""
+                                width="206"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61AYmtvX5ML+product"
+                            ><img
+                                src="assets/layer-1-93.png"
+                                alt="61AYmtvX5ML product"
+                                class=""
+                                width="195"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51hIreTkp0L+product"
+                            ><img
+                                src="assets/layer-1-94.png"
+                                alt="51hIreTkp0L product"
+                                class=""
+                                width="311"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61W6P2lMujL+product"
+                            ><img
+                                src="assets/layer-1-95.jpg"
+                                alt="61W6P2lMujL product"
+                                class=""
+                                width="242"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61eU1+PaNsL+product"
+                            ><img
+                                src="assets/layer-1-67.jpg"
+                                alt="61eU1+PaNsL product"
+                                class=""
+                                width="261"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61TWKv9qwWL+product"
+                            ><img
+                                src="assets/layer-1-68.jpg"
+                                alt="61TWKv9qwWL product"
+                                class=""
+                                width="328"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51y2lrZn92L+product"
+                            ><img
+                                src="assets/layer-1-69.jpg"
+                                alt="51y2lrZn92L product"
+                                class=""
+                                width="203"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=712L4knplBS+product"
+                            ><img
+                                src="assets/layer-1-70.jpg"
+                                alt="712L4knplBS product"
+                                class=""
+                                width="123"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=41Wcdz9plAL+product"
+                            ><img
+                                src="assets/layer-1-71.jpg"
+                                alt="41Wcdz9plAL product"
+                                class=""
+                                width="175"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71AWEpP3bAL+product"
+                            ><img
+                                src="assets/layer-1-72.jpg"
+                                alt="71AWEpP3bAL product"
+                                class=""
+                                width="125"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71QjcxmAqOL+product"
+                            ><img
+                                src="assets/layer-1-73.jpg"
+                                alt="71QjcxmAqOL product"
+                                class=""
+                                width="133"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61IiVMchyfL+product"
+                            ><img
+                                src="assets/layer-1-74.jpg"
+                                alt="61IiVMchyfL product"
+                                class=""
+                                width="128"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81H67FuriVL+product"
+                            ><img
+                                src="assets/layer-1-75.jpg"
+                                alt="81H67FuriVL product"
+                                class=""
+                                width="227"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51Y+Exz7XbL+product"
+                            ><img
+                                src="assets/layer-1-76.jpg"
+                                alt="51Y+Exz7XbL product"
+                                class=""
+                                width="257"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61c+DLMnU2L+product"
+                            ><img
+                                src="assets/layer-1-77.jpg"
+                                alt="61c+DLMnU2L product"
+                                class=""
+                                width="215"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51cNgZxax4L+product"
+                            ><img
+                                src="assets/layer-1-78.jpg"
+                                alt="51cNgZxax4L product"
+                                class=""
+                                width="340"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=616MGQoaS7L+product"
+                            ><img
+                                src="assets/layer-1-79.jpg"
+                                alt="616MGQoaS7L product"
+                                class=""
+                                width="387"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51Dm+8+BaaL+product"
+                            ><img
+                                src="assets/layer-1-80.jpg"
+                                alt="51Dm+8+BaaL product"
+                                class=""
+                                width="167"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=619UX6RjxNL+product"
+                            ><img
+                                src="assets/layer-1-81.jpg"
+                                alt="619UX6RjxNL product"
+                                class=""
+                                width="327"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61GRHX4pTaL+product"
+                            ><img
+                                src="assets/layer-1-82.jpg"
+                                alt="61GRHX4pTaL product"
+                                class=""
+                                width="381"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71T10gT0BSL+product"
+                            ><img
+                                src="assets/layer-1-83.jpg"
+                                alt="71T10gT0BSL product"
+                                class=""
+                                width="198"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61lDXyyppUL+product"
+                            ><img
+                                src="assets/layer-1-84.jpg"
+                                alt="61lDXyyppUL product"
+                                class=""
+                                width="332"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61qrmLn5dtL+product"
+                            ><img
+                                src="assets/layer-1-85.jpg"
+                                alt="61qrmLn5dtL product"
+                                class=""
+                                width="192"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71wcYPqFSNL+product"
+                            ><img
+                                src="assets/layer-1-86.jpg"
+                                alt="71wcYPqFSNL product"
+                                class=""
+                                width="185"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81TfzYcaglL+product"
+                            ><img
+                                src="assets/layer-1-87.jpg"
+                                alt="81TfzYcaglL product"
+                                class=""
+                                width="145"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61W88zdNSXL+product"
+                            ><img
+                                src="assets/layer-1-88.jpg"
+                                alt="61W88zdNSXL product"
+                                class=""
+                                width="277"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71dslVfkIPL+product"
+                            ><img
+                                src="assets/layer-1-89.jpg"
+                                alt="71dslVfkIPL product"
+                                class=""
+                                width="125"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71WLIU1EuBS+product"
+                            ><img
+                                src="assets/layer-1-90.jpg"
+                                alt="71WLIU1EuBS product"
+                                class=""
+                                width="208"
+                                height="200"
+                        /></a>
+                    </div>
+                </section>
+                <section class="rail rail-1-98" aria-label="Popular electronics">
+                    <h2>Popular electronics</h2>
+                    <div class="rail-track" tabindex="0" aria-label="Scroll popular electronics">
+                        <a class="product" href="https://www.amazon.in/s?k=41vBAaU8clL+product"
+                            ><img
+                                src="assets/layer-1-99.png"
+                                alt="41vBAaU8clL product"
+                                class=""
+                                width="168"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61RIdNWxOgL+product"
+                            ><img
+                                src="assets/layer-1-100.png"
+                                alt="61RIdNWxOgL product"
+                                class=""
+                                width="209"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61eiCddloAL+product"
+                            ><img
+                                src="assets/layer-1-101.png"
+                                alt="61eiCddloAL product"
+                                class=""
+                                width="172"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81SQK55b3eL+product"
+                            ><img
+                                src="assets/layer-1-102.png"
+                                alt="81SQK55b3eL product"
+                                class=""
+                                width="99"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51nBTTG3hNL+product"
+                            ><img
+                                src="assets/layer-1-103.png"
+                                alt="51nBTTG3hNL product"
+                                class=""
+                                width="210"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81smriSu3DL+product"
+                            ><img
+                                src="assets/layer-1-104.png"
+                                alt="81smriSu3DL product"
+                                class=""
+                                width="271"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=514MyJRrnBL+product"
+                            ><img
+                                src="assets/layer-1-105.jpg"
+                                alt="514MyJRrnBL product"
+                                class=""
+                                width="90"
+                                height="216"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71Tq7xIA2xL+product"
+                            ><img
+                                src="assets/layer-1-106.jpg"
+                                alt="71Tq7xIA2xL product"
+                                class=""
+                                width="154"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81jOiU+tzWL+product"
+                            ><img
+                                src="assets/layer-1-107.jpg"
+                                alt="81jOiU+tzWL product"
+                                class=""
+                                width="154"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71AXRlEHqTL+product"
+                            ><img
+                                src="assets/layer-1-108.jpg"
+                                alt="71AXRlEHqTL product"
+                                class=""
+                                width="186"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71ozJkaqiwL+product"
+                            ><img
+                                src="assets/layer-1-109.jpg"
+                                alt="71ozJkaqiwL product"
+                                class=""
+                                width="196"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71g5FSQQl-L+product"
+                            ><img
+                                src="assets/layer-1-110.jpg"
+                                alt="71g5FSQQl-L product"
+                                class=""
+                                width="240"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71vfAL3vM6L+product"
+                            ><img
+                                src="assets/layer-1-111.jpg"
+                                alt="71vfAL3vM6L product"
+                                class=""
+                                width="121"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61bm7UEdGAL+product"
+                            ><img
+                                src="assets/layer-1-112.jpg"
+                                alt="61bm7UEdGAL product"
+                                class=""
+                                width="167"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71sdHtcSB3L+product"
+                            ><img
+                                src="assets/layer-1-113.jpg"
+                                alt="71sdHtcSB3L product"
+                                class=""
+                                width="257"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=71UdDIKDlEL+product"
+                            ><img
+                                src="assets/layer-1-114.jpg"
+                                alt="71UdDIKDlEL product"
+                                class=""
+                                width="154"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81OLYTR62mL+product"
+                            ><img
+                                src="assets/layer-1-115.jpg"
+                                alt="81OLYTR62mL product"
+                                class=""
+                                width="260"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61LnPbT7KML+product"
+                            ><img
+                                src="assets/layer-1-116.jpg"
+                                alt="61LnPbT7KML product"
+                                class=""
+                                width="179"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=613rDZCmepL+product"
+                            ><img
+                                src="assets/layer-1-117.jpg"
+                                alt="613rDZCmepL product"
+                                class=""
+                                width="203"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81cDCEmyfiL+product"
+                            ><img
+                                src="assets/layer-1-118.jpg"
+                                alt="81cDCEmyfiL product"
+                                class=""
+                                width="195"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51Rry3vQgJL+product"
+                            ><img
+                                src="assets/layer-1-119.jpg"
+                                alt="51Rry3vQgJL product"
+                                class=""
+                                width="265"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=41bTgOWMezL+product"
+                            ><img
+                                src="assets/layer-1-120.jpg"
+                                alt="41bTgOWMezL product"
+                                class=""
+                                width="196"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=81ePr6VxtEL+product"
+                            ><img
+                                src="assets/layer-1-121.jpg"
+                                alt="81ePr6VxtEL product"
+                                class=""
+                                width="172"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=713Cra0h-dL+product"
+                            ><img
+                                src="assets/layer-1-122.jpg"
+                                alt="713Cra0h-dL product"
+                                class=""
+                                width="202"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51UhSLxNY0L+product"
+                            ><img
+                                src="assets/layer-1-123.jpg"
+                                alt="51UhSLxNY0L product"
+                                class=""
+                                width="198"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51xdyyWJ9vL+product"
+                            ><img
+                                src="assets/layer-1-124.jpg"
+                                alt="51xdyyWJ9vL product"
+                                class=""
+                                width="195"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61GJzmy2qxL+product"
+                            ><img
+                                src="assets/layer-1-125.jpg"
+                                alt="61GJzmy2qxL product"
+                                class=""
+                                width="104"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=41A3xRkrPEL+product"
+                            ><img
+                                src="assets/layer-1-126.jpg"
+                                alt="41A3xRkrPEL product"
+                                class=""
+                                width="200"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=51+Nuzgns7L+product"
+                            ><img
+                                src="assets/layer-1-127.jpg"
+                                alt="51+Nuzgns7L product"
+                                class=""
+                                width="155"
+                                height="200"
+                        /></a>
+                        <a class="product" href="https://www.amazon.in/s?k=61XJ9ut-X0L+product"
+                            ><img
+                                src="assets/layer-1-128.jpg"
+                                alt="61XJ9ut-X0L product"
+                                class=""
+                                width="211"
+                                height="200"
+                        /></a>
+                    </div>
+                </section>
+            </main>
+            <a class="back-top" href="#top">Back to top</a>
+            <footer class="footer">
+                <section class="footer-about">
+                    <h2>Get to Know Us</h2>
+                    <ul>
+                        <li><a href="https://www.amazon.in/s?k=About+Amazon">About Amazon</a></li>
+                        <li><a href="https://www.amazon.in/s?k=Careers">Careers</a></li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Press+Releases">Press Releases</a>
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Amazon+Science">Amazon Science</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer-connect">
+                    <h2>Connect with Us</h2>
+                    <ul>
+                        <li><a href="https://www.amazon.in/s?k=Facebook">Facebook</a></li>
+                        <li><a href="https://www.amazon.in/s?k=Twitter">Twitter</a></li>
+                        <li><a href="https://www.amazon.in/s?k=Instagram">Instagram</a></li>
+                    </ul>
+                </section>
+                <section class="footer-money">
+                    <h2>Make Money with Us</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Sell+on+Amazon">Sell on Amazon</a>
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Sell+under+Amazon+Accelerator"
+                                >Sell under Amazon Accelerator</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Protect+and+Build+Your+Brand"
+                                >Protect and Build Your Brand</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Amazon+Global+Selling"
+                                >Amazon Global Selling</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Supply+to+Amazon"
+                                >Supply to Amazon</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Become+an+Affiliate"
+                                >Become an Affiliate</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Fulfilment+by+Amazon"
+                                >Fulfilment by Amazon</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Advertise+Your+Products"
+                                >Advertise Your Products</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Amazon+Pay+on+Merchants"
+                                >Amazon Pay on Merchants</a
+                            >
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer-help">
+                    <h2>Let Us Help You</h2>
+                    <ul>
+                        <li><a href="https://www.amazon.in/s?k=Your+Account">Your Account</a></li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Returns+Centre">Returns Centre</a>
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Recalls+and+Product+Safety+Alerts"
+                                >Recalls and Product Safety Alerts</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=100%25+Purchase+Protection"
+                                >100% Purchase Protection</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://www.amazon.in/s?k=Amazon+App+Download"
+                                >Amazon App Download</a
+                            >
+                        </li>
+                        <li><a href="https://www.amazon.in/s?k=Help">Help</a></li>
+                    </ul>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

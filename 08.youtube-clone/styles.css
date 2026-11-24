@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+.videos > * {
+  min-width: 0;
+}
+
+body {
+  background-color: #181818;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  height: 64px;
+  padding: 10px 24px;
+  background-color: #202020;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.brand img {
+  width: 24px;
+}
+
+.brand .logo {
+  width: 115px;
+}
+
+.search {
+  display: flex;
+  flex: 1;
+  max-width: 720px;
+  min-width: 0;
+  height: 38px;
+}
+
+.search-placeholder {
+  flex: 1;
+  min-width: 0;
+  color: #888;
+  background-color: #121212;
+  border: 1px solid #383838;
+  padding: 8px;
+  font-size: 17px;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  flex-shrink: 0;
+  background-color: #323232;
+  border: 1px solid #383838;
+}
+
+.search-icon img {
+  width: 24px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.header-icons .profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  overflow: auto;
+  background-color: #212121;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 13px 26px;
+  font-size: 15px;
+}
+
+.sidebar a img {
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar a span {
+  overflow: hidden;
+}
+
+.sidebar a:hover, .sidebar .active {
+  background-color: #383838;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #383838;
+  margin: 18px 0;
+}
+
+.sidebar h2 {
+  color: #aaa;
+  font-size: 14px;
+  padding: 4px 26px 12px;
+}
+
+main {
+  margin-left: 240px;
+}
+
+.topics {
+  display: flex;
+  gap: 14px;
+  overflow: auto;
+  padding: 14px 20px;
+  border-bottom: 1px solid #383838;
+}
+
+.topics a {
+  flex-shrink: 0;
+  padding: 8px 15px;
+  background-color: #373737;
+  border: 1px solid #484848;
+  border-radius: 24px;
+  font-size: 14px;
+}
+
+.topics .selected {
+  background-color: white;
+  color: #111;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 42px 18px;
+  padding: 25px 20px;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.video h2 {
+  font-size: 16px;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
+
+.video p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.45;
+}
+
+a:focus {
+  outline: 2px solid #7fb4ff;
+}
+
+@media screen and (max-width: 1200px) {
+  .videos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .brand {
+    width: 190px;
+  }
+  .header-icons {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    width: 80px;
+  }
+  .sidebar a {
+    justify-content: center;
+    padding: 17px;
+  }
+  .sidebar a span, .sidebar h2, .sidebar hr {
+    display: none;
+  }
+  main {
+    margin-left: 80px;
+  }
+  .videos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand {
+    width: auto;
+    gap: 15px;
+  }
+  .header-icons img {
+    display: none;
+  }
+  .header-icons .profile {
+    display: block;
+  }
+  .topbar {
+    gap: 16px;
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .topbar {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 12px;
+  }
+  .brand {
+    flex: 1;
+  }
+  .brand .logo {
+    width: 100px;
+  }
+  .header-icons {
+    order: 1;
+  }
+  .search {
+    order: 2;
+    flex-basis: 100%;
+    max-width: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+  }
+  .videos {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 16px 12px;
+  }
+  .topics {
+    padding: 12px;
+  }
+}
