@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background-color: #f0f3f8;
+    color: #17233b;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.scoreboard {
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 0 24px;
+}
+
+.match,
+.players {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.match {
+    gap: 20px;
+}
+
+.team {
+    padding: 16px;
+    border-top: 5px solid #284d8f;
+    border-radius: 8px;
+    background-color: #e0eaff;
+}
+
+.team-red {
+    border-color: #a3344e;
+    background-color: #fde8ed;
+}
+
+.team h2,
+.score {
+    margin: 0 0 12px;
+}
+
+.score {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.player {
+    padding: 12px 6px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.player img {
+    width: 100%;
+    max-width: 100px;
+}
+
+.player h3,
+.player p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .match {
+        grid-template-columns: 1fr;
+    }
+}

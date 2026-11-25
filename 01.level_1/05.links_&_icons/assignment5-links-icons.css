@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  color: #222;
+  background-color: #f7f9fc;
+  font-family: Roboto, sans-serif;
+}
+
+#site-title {
+  padding: 1.5rem;
+}
+
+#site-title h1 {
+  margin: 0 0 0.5rem;
+}
+
+.subtitle,
+.note {
+  color: #555e68;
+  font-size: 0.9rem;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+.primary-nav {
+  padding: 0.75rem 1.5rem;
+  border-top: 1px solid #cbd9e7;
+  border-bottom: 1px solid #cbd9e7;
+  background-color: #e5eef7;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main,
+footer {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.sample-link {
+  display: inline-block;
+  margin: 0 1rem 0.5rem 0;
+}
+
+/* Underlines identify default links. A short color transition makes state changes clear. */
+.nav-link,
+.sample-link,
+.icon-link {
+  color: #14528c;
+  text-decoration: underline;
+  transition: color 0.16s ease;
+}
+
+.nav-link:visited,
+.sample-link:visited,
+.sample-link.visited {
+  color: #535c66;
+}
+
+.nav-link:hover,
+.sample-link:hover,
+.icon-link:hover {
+  color: #16603b;
+  text-decoration: none;
+}
+
+.nav-link:active,
+.nav-link.active,
+.sample-link:active,
+.sample-link.active {
+  color: #a21f29;
+  text-decoration: none;
+}
+
+/* A visible outline shows keyboard users which link will activate. */
+a:focus-visible {
+  outline: 3px solid #2765a2;
+  outline-offset: 3px;
+}
+
+.icon-list {
+  padding: 0;
+  list-style: none;
+}
+
+.icon-list li {
+  margin-bottom: 0.75rem;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* CSS draws the decorative icons. The existing link text supplies each name. */
+.icon-link::before {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: #5e7390;
+  content: "";
+}
+
+.icon-list li:nth-child(even) .icon-link::before {
+  border-radius: 2px;
+}

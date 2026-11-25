@@ -1,0 +1,163 @@
+* {
+  /* With border-box, the declared width includes padding and borders. */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #222;
+  background-color: #f7f9fc;
+  font-family: Roboto, sans-serif;
+}
+
+#site-title {
+  padding: 1.5rem;
+  background-color: #e5eef8;
+}
+
+#site-title h1 {
+  margin: 0 0 0.5rem;
+}
+
+.note,
+.subtitle {
+  color: #535b65;
+  font-size: 0.9rem;
+}
+
+main,
+footer {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.box {
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+  transition: border-color 0.18s ease;
+}
+
+.box h3,
+.box p {
+  margin: 0 0 0.5rem;
+}
+
+.box1 {
+  padding: 12px;
+  border: 3px solid #1e88e5;
+}
+
+.box2 {
+  padding: 20px;
+  border: 4px dotted #4caf50;
+}
+
+.box3 {
+  margin: 8px 0 24px 12px;
+  border: 2px dashed #f57c00;
+  border-radius: 12px;
+}
+
+.center-auto,
+.center-flex {
+  padding: 0.75rem;
+  border: 2px solid #376794;
+  background-color: white;
+  text-align: center;
+}
+
+.center-auto {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.center-flex-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.center-flex {
+  width: 100%;
+  max-width: 18rem;
+}
+
+.with-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+}
+
+.with-content p {
+  order: -1;
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.with-content::before,
+.with-content::after {
+  flex-shrink: 0;
+  width: 10rem;
+  padding: 0.75rem;
+  border: 3px solid #376794;
+  background-color: white;
+}
+
+.with-content::before {
+  /* Padding and borders make the outside width larger than 10rem. */
+  box-sizing: content-box;
+  content: "content-box";
+}
+
+.with-content::after {
+  /* Padding and borders fit inside the same declared 10rem width. */
+  box-sizing: border-box;
+  content: "border-box";
+}
+
+.outline-button {
+  padding: 0.6rem 0.9rem;
+  border: 2px solid #376794;
+  border-radius: 4px;
+  color: #182735;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.outline-button:focus {
+  /* An outline is drawn outside the border without taking up layout space. */
+  border-color: #131f2a;
+  outline: 3px solid rgba(30, 136, 229, 0.25);
+  outline-offset: 3px;
+}
+
+.box-hover-1,
+.box-hover-2 {
+  border: 2px solid #91b6d1;
+}
+
+.box:hover {
+  border-color: #30234a;
+}
+
+.grid-demo {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.grid-item {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #376794;
+  background-color: white;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .grid-demo {
+    flex-direction: column;
+  }
+}

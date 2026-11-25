@@ -1,0 +1,110 @@
+:root {
+  --type-base: 1rem;
+  --type-lg: 1.25rem;
+  --type-xl: 1.5rem;
+}
+
+body {
+  margin: 0;
+  color: #25242a;
+  background-color: #f8f7fb;
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+#site-title {
+  padding: 1.5rem;
+  color: #321851;
+  background-color: #eee6f7;
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--type-xl);
+}
+
+h2 {
+  font-size: var(--type-lg);
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: var(--type-base);
+  line-height: 1.6;
+}
+
+.subtitle,
+.small-note,
+.muted {
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}
+
+.subtitle {
+  margin-bottom: 0;
+}
+
+.lead {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+main,
+footer {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.5rem;
+}
+
+section {
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border: 1px solid #ded6e8;
+  background-color: white;
+}
+
+/* Georgia gives the sample a distinct serif heading with locally available fallbacks. */
+.google-heading {
+  color: #513378;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: var(--type-xl);
+}
+
+.fancy::first-line {
+  font-weight: bold;
+}
+
+.fancy::first-letter {
+  color: #513378;
+  font-size: 2rem;
+}
+
+.subtitle-uppercase {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.wrap-example {
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* The heading has strong contrast on white and uses a subtle shadow. */
+.shadow-heading {
+  color: #321851;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Left works well for reading, center for short callouts, and justify for long text blocks. */
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-justify {
+  max-width: 20rem;
+  text-align: justify;
+}

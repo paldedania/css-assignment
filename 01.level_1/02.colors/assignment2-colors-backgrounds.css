@@ -1,0 +1,150 @@
+:root {
+  --primary: #135b98;
+  --light-blue: #dceefa;
+  --sample-image: url("../../07.kidz-world/assets/kw-background.png");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  color: #222;
+  background-color: #f4f6f8;
+}
+
+#site-title {
+  padding: 1.5rem;
+  color: white;
+  background-color: var(--primary);
+}
+
+#site-title h1 {
+  margin-top: 0;
+}
+
+.subtitle {
+  margin-bottom: 0;
+}
+
+main,
+footer {
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.card {
+  min-height: 140px;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: box-shadow 0.18s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.card h3,
+.bg-demo h3,
+.parallax h3 {
+  margin-top: 0;
+}
+
+.card.solid {
+  color: white;
+  background-color: var(--primary);
+}
+
+.card.linear {
+  color: #351203;
+  background-image: linear-gradient(90deg, #ffc7ad, #ff897c);
+}
+
+.card.radial {
+  color: #092d47;
+  background-image: radial-gradient(circle at top left, #def8ff, #72b5e1);
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.4rem 0.65rem;
+  border-radius: 4px;
+  color: #104471;
+  background-color: white;
+}
+
+.bg-demo,
+.compare,
+.parallax {
+  border-radius: 10px;
+  background-image: var(--sample-image);
+  background-color: var(--light-blue);
+}
+
+.bg-demo,
+.parallax {
+  padding: 1rem;
+  color: white;
+  background-image: linear-gradient(rgba(12, 30, 43, 0.78), rgba(12, 30, 43, 0.78)), var(--sample-image);
+}
+
+.bg-demo {
+  background-repeat: repeat-x;
+  background-position: center top;
+  background-size: contain;
+}
+
+.note {
+  word-wrap: break-word;
+}
+
+.bg-compare {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.compare {
+  flex: 1;
+  min-height: 180px;
+  padding: 0.75rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.compare h4 {
+  display: inline-block;
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  color: white;
+  background-color: #133652;
+}
+
+.cover {
+  background-size: cover;
+}
+
+.contain {
+  background-size: contain;
+}
+
+.parallax {
+  min-height: 220px;
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 720px) {
+  .bg-compare {
+    flex-direction: column;
+  }
+
+  /* Mobile browsers handle fixed backgrounds differently. Use scrolling there. */
+  .parallax {
+    background-attachment: scroll;
+  }
+}
